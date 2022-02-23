@@ -1,0 +1,35 @@
+<!--Dieser HTML ist ein result-seite vom formular.html, 
+    wo die werte gelesen werden können -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <div id = "result">
+
+    </div>
+   
+
+    </div>
+    <script>
+      const firstName = sessionStorage.getItem("firstName");
+      const lastName = sessionStorage.getItem("lastName");
+      const email = sessionStorage.getItem("email");
+      const firma = sessionStorage.getItem("firma");
+      const zip = sessionStorage.getItem("zip"); 
+      const city = sessionStorage.getItem("city");  
+      const age = sessionStorage.getItem("age");  
+
+      document.getElementById("result").innerHTML = 
+    `<p class="myClass">Form Data:</p><p>Hallo ${firstName} ${lastName}<p/>`;
+
+    
+    
+    </script>
+</body>
+</html>
